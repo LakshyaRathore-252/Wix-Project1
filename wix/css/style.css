@@ -1,0 +1,957 @@
+/* Google fonts Import link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+
+/* =============
+
+BASE 
+
+================*/
+* {
+  margin: 0;
+  padding: 0;
+  padding: 5;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* ========================================================= Variables =============================================================== */
+
+:root {
+  --btnav-color: #8c5ceb;
+  --social-color: #9966ff;
+  --footer-color: #414141;
+  --text-color: #414141;
+  --white: #ffffff;
+  --ic-color: #9966ff;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* 1rem = 10px  */
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2rem;
+  color: w;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ============================================== Resuable code ===================================================== */
+
+.grid {
+  display: grid;
+  gap: 8rem;
+}
+
+.grid-two-column {
+  font-variant: JIS04;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 9rem 0;
+}
+
+.grid-two-row {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.btn {
+  padding: 1.3rem 3rem;
+  background-color: var(--ic-color);
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #5c3d99;
+  transition: all 0.4s linear;
+}
+
+/* ============================================= Header ============================================================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  height: 8rem;
+  position: relative;
+}
+
+.navbar-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+.navbar-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--btnav-color);
+  transition: all 0.3s linear;
+}
+
+/* =================================================== Right ======================================================== */
+
+/* main div */
+.right {
+  /* border: 2px solid #8c5ceb; */
+  display: flex;
+  align-items: center;
+  left: -4.8rem;
+  max-width: 31%;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* log In button div */
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  /* padding: 0 0.2rem; */
+  width: 50%;
+}
+
+.sign a {
+  color: var(--social-color);
+  font-size:  1.8rem;
+  text-align: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.login {
+  background: var(--social-color);
+  color: var(--white);
+  font-size: 2rem;
+  border-radius: 55%;
+  cursor: pointer;
+}
+
+.log:hover,
+.log:active {
+  color: blue;
+  transition: all 0.3s linear;
+}
+
+.social {
+  /* border: 2px solid yellow; */
+  background: var(--social-color);
+  height: 8rem;
+  /* padding: 0 4.8rem; */
+  max-width: 90%;
+  width: 90%;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* social media icons */
+.icons {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* navbar sticky */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  padding-top: 0;
+}
+
+/* ============================================ HERO SECTION ========================================================== */
+
+.hero-image {
+  max-width: 100%;
+  margin-top: 6rem;
+}
+
+.main {
+  position: relative;
+}
+
+.section-hero-data {
+  position: absolute;
+  top: 20rem;
+  left: 7rem;
+  display: grid;
+  place-items: center;
+  max-width: 50%;
+  width: 100%;
+}
+
+.section-hero-data h1 {
+  font-size: 8rem;
+  width: 60%;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 6.5rem;
+}
+
+.section-hero-data p {
+  margin-top: 4rem;
+  line-height: 3.4rem;
+  color: var(--white);
+  margin-left: 13rem;
+  width: 80%;
+}
+
+.button {
+  position: absolute;
+  top: 51rem;
+  left: 22em;
+  margin-top: 1rem;
+}
+
+.main {
+  height: 75rem;
+}
+
+/* ============================================ BIO-DATA SECTION ======================================================= */
+
+.bio-image img {
+  padding: 5rem;
+  max-width: 125%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bio-data img {
+  /* padding: 3rem; */
+  /* margin-left: 5rem; */
+  margin-top: 5rem;
+  width: 25%;
+}
+
+.bio-data {
+  margin-top: 8rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--white);
+}
+
+.bio-data h2 {
+  color: var(--footer-color);
+  font-size: 3.5rem;
+  padding: 1.2rem;
+  margin-left: 1rem;
+}
+
+.bio-data p {
+  color: var(--text-color);
+  width: 70%;
+  line-height: 2.3rem;
+  margin-left: 3rem;
+}
+
+.service-image img {
+  max-width: 80%;
+}
+
+.service-data img {
+  display: inline-block;
+  max-width: 63%;
+  width: 70%;
+  padding: 1rem;
+}
+
+.service-data {
+  /* padding: 1rem; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-data p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.service-data h2 {
+  color: var(--text-color);
+  font-size: 3.3rem;
+  width: 75%;
+}
+
+.service-info {
+  row-gap: 2rem;
+  max-width: 110%;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.5rem;
+  line-height: 3.2rem;
+}
+
+.service-info p {
+  line-height: 2rem;
+}
+.icon {
+  color: var(--btnav-color);
+  font-size: 2rem;
+}
+
+.service-info a {
+  margin-top: 2rem;
+  width: 60.3%;
+}
+
+/* ================================================== SERVICE-CHALLENGE =============================================== */
+
+.swiper {
+  max-width: 95%;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-freelancing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--footer-color);
+  opacity: 0.7;
+}
+
+/* ================================================= CHALLENGE SECTION =================================================== */
+
+.slide-image {
+  position: relative;
+}
+
+.challenge-data {
+  position: absolute;
+  top: 15rem;
+  /* gap: 5rem; */
+  /* text-align: center;  */
+}
+
+.challenge-data p {
+  position: absolute;
+  top: -6rem;
+  left: 13rem;
+  color: var(--white);
+}
+
+.challege-heading {
+  position: absolute;
+  top: 5rem;
+  font-size: 15rem;
+  /* border: 2px solid red; */
+}
+
+.head {
+  /* top: 5rem; */
+  font-size: 5rem;
+  color: var(--white);
+}
+
+.challenge-para {
+  position: absolute;
+  top: 23rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-decoration: solid;
+  /* left:0; */
+}
+
+.challenge-para:hover {
+  color: var(--text-color);
+  transition: all 0.3s linear;
+}
+
+.watch {
+  color: var(--white);
+  text-decoration: dashed;
+  text-decoration: underline;
+}
+
+.watch:hover {
+  color: var(--text-color);
+  transition: all 0.3s linear;
+}
+
+.i {
+  top: -4rem;
+  font-size: 3rem;
+}
+
+.i:hover {
+  color: var(--text-color);
+  transition: all 0.3s linear;
+}
+
+.challenge-parads {
+  position: absolute;
+  top: 24rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: 30rem;
+}
+
+.slide-image::after {
+  content: "";
+  position: absolute;
+  bottom: 45rem;
+  top: 0rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  /* border: 5px solid yellow; */
+  height: 100%;
+  background-color: var(--text-color);
+  opacity: 0.5;
+}
+
+.all-video {
+  position: absolute;
+  top: 42rem;
+}
+
+.video {
+  color: var(--white);
+  padding: 0.8rem;
+  border: 2px solid var(--white);
+  font-size: 1.7rem;
+}
+
+.video:hover {
+  color: var(--text-color);
+  border: 2px solid var(--footer-color);
+  transition: all 0.3s linear;
+}
+
+/* ========================================== oFFER Section ====================================================== */
+
+.grid1 {
+  display: grid;
+  gap: 5rem;
+}
+
+.offer-carts {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.plan-heading {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 5.5rem;
+}
+
+.cart-1 {
+  background-color: var(--social-color);
+  padding: 2.2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 3rem; */
+  /* margin-bottom: 3rem; */
+  row-gap: 6rem;
+  max-height: 45rem;
+  height: 38rem;
+}
+
+.cart-2 {
+  background-color: var(--social-color);
+  padding: 0.2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 3rem; */
+  /* margin-bottom: 3rem; */
+  row-gap: 6rem;
+  max-height: 45rem;
+  height: 38rem;
+}
+
+.play-heading {
+  font-size: 2.5rem;
+  width: 60%;
+  margin-left: 4.4rem;
+  color: var(--white);
+}
+
+.play {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: var(--white);
+}
+
+.line {
+  line-height: 10rem;
+}
+
+.cart-1 p {
+  color: var(--white);
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.ancher {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.ancher a {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.cart-2 p {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.cart-1 {
+  padding: 1.5rem;
+}
+
+.cart-2 {
+  padding: 1rem;
+}
+
+/* ========================================== FOOTER SECTION ==================================== */
+
+.footer-section {
+  background-color: var(--text-color);
+  height: 5rem;
+}
+
+.social-2 {
+  max-width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.copyright-section {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #969a9c;
+}
+
+.icons-last {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+/* Scroll type */
+
+.scrollTop-style {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: black;
+  z-index: 111111;
+}
+
+.scroll-top {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--btnav-color);
+}
+
+/* ==================================================================================================================================== */
+
+.chat-section {
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--btnav-color);
+  padding: 2rem;
+  gap: 1.5rem;
+  z-index: 100;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.chat-icon {
+  font-size: 2.5rem;
+  fill: var(--white);
+  color: var(--white);
+}
+
+.chart-para {
+  font-size: 1.7rem;
+}
+.neonText {
+  color: var(--white);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+/* =============================================================================================================================== */
+.mobile-navbar-btn {
+  display: none;
+}
+
+/*  ======================================================== Menu Button ===================================== */
+
+/* =============================================================================================================================== */
+
+/* ========================================== Media Queries ============================================ */
+
+/*  ===================================================== 1312px  ======================================================== */
+@media (max-width: 1312px) {
+  .btn {
+    padding: 1rem;
+  }
+}
+
+/*========================================================== 1212px ======================================================= */
+
+@media (min-width: 1212px) {
+  .scrollTop-style {
+    display: none;
+  }
+
+  .chat-section {
+    display: flex;
+  }
+}
+
+/* ================================================== 1212px =========================================== */
+@media (max-width: 1212px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero-data {
+    top: 15rem;
+  }
+
+  .button {
+    top: 40rem;
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================== 1000px ==================================================== */
+
+/* ============================================  1089px ================================================ */
+
+@media (max-width: 1089px) {
+  .all-video {
+    margin-top: -12rem;
+  }
+
+  .button {
+    top: 40rem;
+    left: 20rem;
+    margin-top: 6.5rem;
+  }
+
+  .btn {
+    width: 10rem;
+    margin-top: -2rem;
+    padding: 0.4rem;
+  }
+}
+
+/* ============================================  800px ================================================ */
+
+@media (max-width: 800px) {
+  .section-hero-data {
+    top: 8.3rem;
+  }
+  .button {
+    margin-top: -1rem;
+  }
+  html {
+    font-size: 42%;
+  }
+}
+
+
+/*==================================================== 700px  ============================================================= */
+
+
+@media (max-width:700px) {
+  
+  .bio-data{
+    grid-row-start: 2;
+  }
+
+  .navbar-lists{
+    display: none;
+  }
+
+
+   .social{
+    max-width: 100%;
+    width: 100%;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  .sign{
+    display: none;
+  }
+
+  .bio-image img{
+    max-width: 100%;
+  }
+
+  .bio-data{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .service-image{
+    grid-row-start: 2;
+  }
+
+
+
+
+  
+.service-info {
+  row-gap: 2rem;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5rem;
+  line-height: 3.2rem;
+}
+
+.service-info h2{
+  line-height: 5rem;
+  font-size: 4rem;
+}
+
+.service-info p {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.icon {
+  color: var(--btnav-color);
+  font-size: 4rem;
+}
+
+.service-info a {
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.service-data{
+  width: 100%;
+}
+
+.service-data img{
+  max-width: 500%;
+}
+
+.service-image img{
+  padding: 5rem;
+  max-width: 180%;
+}
+}
+
+/* ====================================================== 600px =============================================== */
+
+@media (max-width:600px) {
+  .hero-image{
+    height: 80%;
+    width: 100%;
+  }
+  .button{
+    margin-top: 10rem;
+    margin-left: -8rem;
+  }
+
+  .btn{
+    padding: 3rem;
+  }
+
+  .section-hero-data{
+    margin-left: -5rem;
+  }
+
+  .challenge-data p{
+    margin-left: -7rem;
+    margin-top: -5rem;
+  }
+
+  .challenge-heading h2{
+    margin-top: -8rem;
+    font-size: 3rem;
+  }
+  
+ .challenge-para{
+    top: 11rem;
+  }
+
+  .challenge-parads{
+    top: 11rem;
+  }
+  .all-video {
+    top:27rem;
+  }
+
+  .bio-image img{
+    max-width: 100%;
+  }
+
+}
+
+
+/* =============================================== 525px ============================================= */
+
+@media (max-width:525px) {
+
+  
+  .bio-image img{
+    max-width: 100%;
+  }
+  
+}
+
+
+
+/* =============================================== 500px ============================================= */
+
+
+@media (max-width:500px) {
+
+  .hero-image{
+    max-width: 100%;
+  }
+
+  .button{
+    margin-top: 12rem;
+  }
+
+  .offer-carts{
+    flex-direction: column;
+  }
+
+  .footer-section{
+    width: 110%;
+  }
+
+  .bio-data h2{
+    width: 60%;
+    font-size: 6rem;
+  }
+
+  .bio-data p{
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 60%;
+  }
+
+}
